@@ -1,2 +1,2 @@
 # line-bot-sample
-LINE BOTのサンプルアプリ
+LINE BOTのサンプル（Python版）
