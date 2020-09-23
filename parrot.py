@@ -94,6 +94,36 @@ def handle_message(event):
                 TextSendMessage("ずっと幸せを願う人"),
             ]
         )  
+    elif "大﨑琴美" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage("怖いときに付き添ってくれた人"),
+            ]
+        )  
+    elif "山﨑笙太郎" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage("完璧なデッサン人形"),
+            ]
+        )  
+    elif "大屋悠斗" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage("きっと爆発の能力者だろう"),
+            ]
+        ) 
+    elif "米津玄師" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage("憧れ"),
+            ]
+        )  
+    elif "かえる" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage("憧れ"),
+            ]
+        )  
     else:
         print("そんなコマンドはない")
 
