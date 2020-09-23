@@ -45,7 +45,7 @@ def handle_message(event):
         url ='https://i.ytimg.com/vi/0YSxmocFCJw/maxresdefault.jpg'
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage(text=event.message.text+"!!!!!!!!!!"),
+                TextSendMessage(text=event.message.time+"!!!!!!!!!!"),
                 ImageSendMessage(url, url), 
             ]
         )
@@ -73,12 +73,10 @@ def handle_message(event):
             ]
         )
     elif event.message.text=="Different_world":
-        url ='https://i.ytimg.com/vi/0YSxmocFCJw/maxresdefault.jpg'
         line_bot_api.reply_message(
             event.reply_token,[
                 TextSendMessage("https://twitter.com/nodoka_321"),
                 TextSendMessage("https://www.instagram.com/mitabinodoka123/"),
-                ImageSendMessage(url, url), 
             ]
         )
     elif event.message.text=="giggle":
