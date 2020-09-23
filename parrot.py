@@ -58,7 +58,7 @@ def handle_message(event):
             ]
         )
     elif event.message.text=="String taste Lollipop":
-        url ='https://github.com/souma3332/line-bot-sample/tree/master/static/images/home.png'
+        url ='https://www.google.co.jp/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fnodoka_321&psig=AOvVaw2gB3NtnvcPRMXk4rZCtBfv&ust=1600953103128000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJDPiZ2t_-sCFQAAAAAdAAAAABAE'
         line_bot_api.reply_message(
             event.reply_token,[
                 TextSendMessage("http://linux.mec.edc.ac.jp/~samson/"),
