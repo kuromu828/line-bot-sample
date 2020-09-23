@@ -125,19 +125,19 @@ def handle_message(event):
     elif "食べ物" in event.message.text:
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage("憧れ"),
+                TextSendMessage("日によって変わっちゃうな\nでも割と何でも好きだよ"),
             ]
         ) 
     elif "秘密" in event.message.text:
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage("憧れ"),
+                TextSendMessage("漢字の名前がわかる人をどう思っているかはある程度ここに秘密をかいてるよ"),
             ]
         )  
     elif "愚痴" in event.message.text:
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage("憧れ"),
+                TextSendMessage("直接聞くよ\nそれが億劫ならここに吐いていけばいい\n僕は何があろうと君の味方のつもりだ"),
             ]
         )  
     elif "こんにちは\nおはよう\nこんばんは\n食べ物\n秘密\n愚痴" in event.message.text:
