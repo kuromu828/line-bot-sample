@@ -54,10 +54,11 @@ def handle_message(event):
             event.reply_token,[
                 TextSendMessage("https://www.youtube.com/channel/UCl4pHQq8mo3VUFxRs6g_aZQ?pbjreload=102"),
                 TextSendMessage("https://youtu.be/vIiM1gmEhRA"),
+                TextSendMessage("https://www.nicovideo.jp/watch/sm37437653"),
             ]
         )
     elif event.message.text=="String taste Lollipop":
-        url ='https://i.ytimg.com/vi/0YSxmocFCJw/maxresdefault.jpg'
+        url ='https://github.com/souma3332/line-bot-sample/tree/master/static/images/home.png'
         line_bot_api.reply_message(
             event.reply_token,[
                 TextSendMessage("http://linux.mec.edc.ac.jp/~samson/"),
