@@ -53,7 +53,7 @@ def handle_message(event):
         url ='https://i.ytimg.com/vi/0YSxmocFCJw/maxresdefault.jpg'
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage(text=event.message.text+"!!!!!!!!!!"),
+                TextSendMessage("https://www.youtube.com/channel/UCl4pHQq8mo3VUFxRs6g_aZQ?pbjreload=102"),
                 ImageSendMessage(url, url), 
             ]
         )
@@ -76,7 +76,8 @@ def handle_message(event):
         url ='https://i.ytimg.com/vi/0YSxmocFCJw/maxresdefault.jpg'
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage(text=event.message.text+"!!!!!!!!!!"),
+                TextSendMessage("https://twitter.com/nodoka_321"),
+                TextSendMessage("https://www.instagram.com/mitabinodoka123/"),
                 ImageSendMessage(url, url), 
             ]
         )
