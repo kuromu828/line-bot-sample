@@ -45,16 +45,15 @@ def handle_message(event):
         url ='https://i.ytimg.com/vi/0YSxmocFCJw/maxresdefault.jpg'
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage(text=event.message.time+"!!!!!!!!!!"),
+                TextSendMessage(text=event.message.text+"!!!!!!!!!!"),
                 ImageSendMessage(url, url), 
             ]
         )
     elif event.message.text=="2001/03/21":
-        url ='https://i.ytimg.com/vi/0YSxmocFCJw/maxresdefault.jpg'
         line_bot_api.reply_message(
             event.reply_token,[
                 TextSendMessage("https://www.youtube.com/channel/UCl4pHQq8mo3VUFxRs6g_aZQ?pbjreload=102"),
-                ImageSendMessage(url, url), 
+                TextSendMessage("https://youtu.be/vIiM1gmEhRA"),
             ]
         )
     elif event.message.text=="String taste Lollipop":
@@ -69,7 +68,7 @@ def handle_message(event):
         url ='https://i.ytimg.com/vi/0YSxmocFCJw/maxresdefault.jpg'
         line_bot_api.reply_message(
             event.reply_token,[
-                ImageSendMessage(url, url), 
+                TextSendMessage("こんにちは\nおはよう\nこんばんは\n食べ物\n秘密\n愚痴"),
             ]
         )
     elif event.message.text=="Different_world":
@@ -115,6 +114,36 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,[
                 TextSendMessage("憧れ"),
+            ]
+        )  
+    elif "こんにちは"or"おはよう"or"こんばんは" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage(text=event.message.text+"　　スマホの中だと太陽も月も見えないから残念だ"),
+            ]
+        )  
+    elif "食べ物" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage("憧れ"),
+            ]
+        ) 
+    elif "秘密" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage("憧れ"),
+            ]
+        )  
+    elif "愚痴" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage("憧れ"),
+            ]
+        )  
+    elif "こんにちは\nおはよう\nこんばんは\n食べ物\n秘密\n愚痴" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage("普通まんまコピーするか？　そういうことじゃないって"),
             ]
         )  
     elif "かえる"or"カエル"or"蛙" in event.message.text:
