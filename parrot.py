@@ -118,7 +118,7 @@ def handle_message(event):
                 TextSendMessage("憧れ"),
             ]
         )  
-    elif "かえる" in event.message.text:
+    elif "かえる"or"カエル"or"蛙" in event.message.text:
         line_bot_api.reply_message(
             event.reply_token,[
                 TextSendMessage("憧れ"),
