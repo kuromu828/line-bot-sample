@@ -68,7 +68,7 @@ def handle_message(event):
         url ='https://i.ytimg.com/vi/0YSxmocFCJw/maxresdefault.jpg'
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage("こんにちは\nおはよう\nこんばんは\n食べ物\n秘密\n愚痴"),
+                TextSendMessage("...こんにちは\nおはよう\nこんばんは\n食べ物\n秘密\n愚痴"),
             ]
         )
     elif event.message.text=="Different_world":
@@ -140,7 +140,7 @@ def handle_message(event):
                 TextSendMessage("直接聞くよ\nそれが億劫ならここに吐いていけばいい\n僕は何があろうと君の味方のつもりだ"),
             ]
         )  
-    elif "こんにちは\nおはよう\nこんばんは\n食べ物\n秘密\n愚痴" in event.message.text:
+    elif "...こんにちは\nおはよう\nこんばんは\n食べ物\n秘密\n愚痴" in event.message.text:
         line_bot_api.reply_message(
             event.reply_token,[
                 TextSendMessage("普通まんまコピーするか？　そういうことじゃないって"),
