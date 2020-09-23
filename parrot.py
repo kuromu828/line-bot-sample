@@ -86,7 +86,6 @@ def handle_message(event):
                 ImageSendMessage(url, url), 
             ]
         )  
-          
     elif "こんにちは\nおはよう\nこんばんは\n食べ物\n秘密\n愚痴" in event.message.text:
         line_bot_api.reply_message(
             event.reply_token,[
