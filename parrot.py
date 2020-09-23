@@ -61,7 +61,7 @@ def handle_message(event):
         url ='https://i.ytimg.com/vi/0YSxmocFCJw/maxresdefault.jpg'
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage(text=event.message.text+"!!!!!!!!!!"),
+                TextSendMessage("http://linux.mec.edc.ac.jp/~samson/"),
                 ImageSendMessage(url, url), 
             ]
         )
