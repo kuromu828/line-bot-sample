@@ -91,7 +91,6 @@ def handle_message(event):
             event.reply_token,[
                 TextSendMessage("普通まんまコピーするか？　そういうことじゃないって"),
             ]
-            return
         )
     elif "肥田彩花" in event.message.text:
         line_bot_api.reply_message(
