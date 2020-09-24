@@ -42,10 +42,10 @@ def callback():
 def handle_message(event):
 
     if event.message.text=="HEY！":
-        url ='https://i.ytimg.com/vi/0YSxmocFCJw/maxresdefault.jpg'
+        url ='https://www.google.com/imgres?imgurl=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FDt9Xh8mUcAACbg1.jpg&imgrefurl=https%3A%2F%2Ftwitter.com%2Fnodoka_321&tbnid=Q_Nnzxodggm9KM&vet=12ahUKEwim6Jjq_IDsAhWDAZQKHSbMDQIQMygBegUIARCSAQ..i&docid=964bRBS8w6E69M&w=1200&h=675&itg=1&q=%E4%B8%89%E9%87%8E%E5%9C%9F%E9%A6%99&ved=2ahUKEwim6Jjq_IDsAhWDAZQKHSbMDQIQMygBegUIARCSAQ'
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage(text=event.message.text+"!{Nickname}"),
+                TextSendMessage("作曲を依頼の方は\n以下のメールアドレスまで\nmitabinodoka123@gmail.com\n一曲1500en~"),
                 ImageSendMessage(url, url), 
             ]
         )
