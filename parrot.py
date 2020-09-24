@@ -42,7 +42,7 @@ def callback():
 def handle_message(event):
 
     if event.message.text=="HEY！":
-        url ='https://www.google.com/imgres?imgurl=https%3A%2F%2Fpbs.twimg.com%2Fmedia%2FDt9Xh8mUcAACbg1.jpg&imgrefurl=https%3A%2F%2Ftwitter.com%2Fnodoka_321&tbnid=Q_Nnzxodggm9KM&vet=12ahUKEwim6Jjq_IDsAhWDAZQKHSbMDQIQMygBegUIARCSAQ..i&docid=964bRBS8w6E69M&w=1200&h=675&itg=1&q=%E4%B8%89%E9%87%8E%E5%9C%9F%E9%A6%99&ved=2ahUKEwim6Jjq_IDsAhWDAZQKHSbMDQIQMygBegUIARCSAQ'
+        url =''
         line_bot_api.reply_message(
             event.reply_token,[
                 TextSendMessage("作曲を依頼の方は\n以下のメールアドレスまで\nmitabinodoka123@gmail.com\n一曲1500en~"),
@@ -58,10 +58,11 @@ def handle_message(event):
             ]
         )
     elif event.message.text=="String taste Lollipop":
-        url ='https://www.google.co.jp/url?sa=i&url=https%3A%2F%2Ftwitter.com%2Fnodoka_321&psig=AOvVaw2gB3NtnvcPRMXk4rZCtBfv&ust=1600953103128000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCJDPiZ2t_-sCFQAAAAAdAAAAABAE'
+        url =''
         line_bot_api.reply_message(
             event.reply_token,[
                 TextSendMessage("http://linux.mec.edc.ac.jp/~samson/"),
+                TextSendMessage("出来損ないのHPです　MUSICとContact　のページだけ完成してます\n　いつか消します"),
                 ImageSendMessage(url, url), 
             ]
         )
