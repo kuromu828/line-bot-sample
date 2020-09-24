@@ -80,11 +80,9 @@ def handle_message(event):
             ]
         )
     elif event.message.text=="giggle":
-        url ='https://i.ytimg.com/vi/0YSxmocFCJw/maxresdefault.jpg'
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage(text=event.message.text+"!!!!!!!!!!"),
-                ImageSendMessage(url, url), 
+                TextSendMessage("Coming soon"),
             ]
         )  
     elif "こんにちは\nおはよう\nこんばんは\n食べ物\n秘密\n愚痴" in event.message.text:
