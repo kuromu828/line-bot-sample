@@ -46,7 +46,6 @@ def handle_message(event):
         line_bot_api.reply_message(
             event.reply_token,[
                 TextSendMessage("作曲を依頼の方は\n以下のメールアドレスまで\nmitabinodoka123@gmail.com\n一曲1500en~"),
-                ImageSendMessage(url, url), 
             ]
         )
     elif event.message.text=="2001/03/21":
@@ -58,12 +57,10 @@ def handle_message(event):
             ]
         )
     elif event.message.text=="String taste Lollipop":
-        url =''
         line_bot_api.reply_message(
             event.reply_token,[
                 TextSendMessage("http://linux.mec.edc.ac.jp/~samson/"),
                 TextSendMessage("出来損ないのHPです　MUSICとContact　のページだけ完成してます\n　いつか消します"),
-                ImageSendMessage(url, url), 
             ]
         )
     elif event.message.text=="一覧表":
