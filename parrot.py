@@ -7,7 +7,7 @@ from linebot.exceptions import (
     InvalidSignatureError
 )
 from linebot.models import (
-    MessageEvent, TextMessage, TextSendMessage,ImageSendMessage,AudioMessage,
+    MessageEvent, TextMessage, TextSendMessage,ImageSendMessage,AudioMessage,ImageMessage,
 )
 import os
 
