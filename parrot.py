@@ -57,12 +57,10 @@ def handle_message(event):
             ]
         )
     elif event.message.text=="String taste Lollipop":
-        url ='https://d.kuku.lu/53631ba44f'
         line_bot_api.reply_message(
             event.reply_token,[
                 TextSendMessage("http://linux.mec.edc.ac.jp/~samson/"),
                 TextSendMessage("出来損ないのHPです　MUSICとContact　のページだけ完成してます\n　いつか消します"),
-                ImageSendMessage(url,url),
             ]
         )
     elif event.message.text=="一覧表":
