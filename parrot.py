@@ -37,6 +37,12 @@ def callback():
 
     return 'OK'
 
+@handler.add(MessageEvent, message=(ImageMessage, AudioMessage))
+def handle_image_audio_message(event):
+    content = line_bot_api.get_message_content(event.message.id)
+    with open('file', 'w') as f:
+        for c in content.iter_content():
+            f.write(c)
 
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
