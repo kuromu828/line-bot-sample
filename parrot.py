@@ -130,6 +130,24 @@ def handle_message(event):
                 TextSendMessage("テンパ"),
             ]
         ) 
+    elif "天パ" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage("松浦優斗"),
+            ]
+        ) 
+    elif "天ぱ" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage("松浦優斗"),
+            ]
+        ) 
+    elif "てんぱ" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage("松浦優斗"),
+            ]
+        )
     elif "テンパ" in event.message.text:
         line_bot_api.reply_message(
             event.reply_token,[
