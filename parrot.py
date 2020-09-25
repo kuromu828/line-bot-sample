@@ -57,10 +57,12 @@ def handle_message(event):
             ]
         )
     elif event.message.text=="String taste Lollipop":
+        url ='https://d.kuku.lu/53631ba44f'
         line_bot_api.reply_message(
             event.reply_token,[
                 TextSendMessage("http://linux.mec.edc.ac.jp/~samson/"),
                 TextSendMessage("出来損ないのHPです　MUSICとContact　のページだけ完成してます\n　いつか消します"),
+                ImageSendMessage(url,url),
             ]
         )
     elif event.message.text=="一覧表":
@@ -113,18 +115,42 @@ def handle_message(event):
                 TextSendMessage("きっと爆発の能力者だろう"),
             ]
         ) 
+    elif "青笹大輝" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage("ギタリスト"),
+            ]
+        ) 
+    elif "岩谷正文" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage("ドラムの天才"),
+            ]
+        ) 
+    elif "松浦優斗" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage("テンパ"),
+            ]
+        ) 
+    elif "テンパ" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage("松浦優斗"),
+            ]
+        ) 
     elif "米津玄師" in event.message.text:
         line_bot_api.reply_message(
             event.reply_token,[
                 TextSendMessage("憧れ"),
             ]
         )  
-    elif "こんにちは"or"おはよう"or"こんばんは" in event.message.text:
+    elif "二神巴野土香" in event.message.text:
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage(text=event.message.text+"　　スマホの中だと太陽も月も見えないから残念だ"),
+                TextSendMessage("~ニノカミハ　ノドカ~多分いつか苗字を変えます"),
             ]
-        )  
+        )
     elif "食べ物" in event.message.text:
         line_bot_api.reply_message(
             event.reply_token,[
@@ -143,12 +169,48 @@ def handle_message(event):
                 TextSendMessage("直接聞くよ\nそれが億劫ならここに吐いていけばいい\n僕は何があろうと君の味方のつもりだ"),
             ]
         )  
-    elif "かえる"or"カエル"or"蛙" in event.message.text:
+    elif "かえる" in event.message.text:
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage("憧れ"),
+                TextSendMessage("一生好きなもの"),
             ]
         )  
+    elif "カエル" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage("一生好きなもの"),
+            ]
+        )
+    elif "蛙" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage("一生好きなもの"),
+            ]
+        )  
+    elif "こんにちは" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage(text=event.message.text+"　　スマホの中だと太陽も月も見えないから残念だ"),
+            ]
+        )
+    elif "おはよう" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage(text=event.message.text+"　　スマホの中だと太陽も月も見えないから残念だ"),
+            ]
+        )
+    elif "こんばんは" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage(text=event.message.text+"　　スマホの中だと太陽も月も見えないから残念だ"),
+            ]
+        )
+    elif "[[["or"]]]" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage(text=event.message.text+"その文字に対応する文は作ってないな🐤"),
+            ]
+        )
     else:
         print("そんなコマンドはない")
 
