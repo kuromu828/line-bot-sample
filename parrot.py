@@ -149,6 +149,18 @@ def handle_message(event):
                 TextSendMessage("~ニノカミハ　ノドカ~多分いつか苗字を変えます"),
             ]
         )
+    elif "二上穂乃香" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage("ただただ怖い"),
+            ]
+        )
+    elif "二上壮真" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage("404　not found ----error"),
+            ]
+        )
     elif "食べ物" in event.message.text:
         line_bot_api.reply_message(
             event.reply_token,[
@@ -206,7 +218,7 @@ def handle_message(event):
     elif "[[["or"]]]" in event.message.text:
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage(text=event.message.text+"その文字に対応する文は作ってないな🐤"),
+                TextSendMessage(text=event.message.text+"    その文字に対応する文は作ってないな🐤"),
             ]
         )
     else:
