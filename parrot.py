@@ -184,6 +184,12 @@ def handle_message(event):
                 TextSendMessage("日によって変わっちゃうな\nでも割と何でも好きだよ"),
             ]
         ) 
+    elif "吉田日向" in event.message.text:
+        line_bot_api.reply_message(
+            event.reply_token,[
+                TextSendMessage("体育会系最強お笑い芸人"),
+            ]
+        ) 
     elif "秘密" in event.message.text:
         line_bot_api.reply_message(
             event.reply_token,[
