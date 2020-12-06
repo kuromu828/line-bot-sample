@@ -40,204 +40,47 @@ def callback():
 @handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
 
-    if event.message.text=="HEY！":
+    if event.message.text=="店舗案内":
         url =''
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage("作曲を依頼の方は\n以下のメールアドレスまで\nmitabinodoka123@gmail.com\n一曲1500en~"),
+                TextSendMessage(""),
             ]
         )
-    elif event.message.text=="2001/03/21":
+    elif event.message.text=="イベント予定":
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage("https://www.youtube.com/channel/UCl4pHQq8mo3VUFxRs6g_aZQ?pbjreload=102"),
-                TextSendMessage("https://youtu.be/vIiM1gmEhRA"),
-                TextSendMessage("https://www.nicovideo.jp/watch/sm37437653"),
+                TextSendMessage(""),
             ]
         )
-    elif event.message.text=="String taste Lollipop":
+    elif event.message.text=="従業員名簿":
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage("http://linux.mec.edc.ac.jp/~samson/"),
-                TextSendMessage("出来損ないのHPです　MUSICとContact　のページだけ完成してます\n　いつか消します"),
+                TextSendMessage(""),
             ]
         )
-    elif event.message.text=="一覧表":
+    elif event.message.text=="道案内":
         url ='https://i.ytimg.com/vi/0YSxmocFCJw/maxresdefault.jpg'
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage("こんにちは\nおはよう\nこんばんは\n食べ物\n秘密\n愚痴"),
+                TextSendMessage("木屋ビル４F"),
+                TextSendMessage("〒730-0021 広島県広島市中区胡町２−１３"),
             ]
         )
-    elif event.message.text=="Different_world":
+    elif event.message.text=="料金表":
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage("https://twitter.com/nodoka_321"),
-                TextSendMessage("https://www.instagram.com/mitabinodoka123/"),
+                TextSendMessage(""),
+                ImageSendMessage(./static/images/ダウンロード(1).jpeg)
             ]
         )
-    elif event.message.text=="giggle":
+    elif event.message.text=="求人":
         line_bot_api.reply_message(
             event.reply_token,[
                 TextSendMessage("Coming soon"),
             ]
         )  
-    elif "こんにちは\nおはよう\nこんばんは\n食べ物\n秘密\n愚痴" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("普通まんまコピーするか？　そういうことじゃないって"),
-            ]
-        )
-    elif "肥田彩花" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("ずっと幸せを願う人"),
-            ]
-        )  
-    elif "大﨑琴美" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("怖いときに付き添ってくれた人"),
-            ]
-        )  
-    elif "山﨑笙太郎" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("完璧なデッサン人形"),
-            ]
-        )  
-    elif "大屋悠斗" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("きっと爆発の能力者だろう"),
-            ]
-        ) 
-    elif "青笹大輝" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("ギタリスト"),
-            ]
-        ) 
-    elif "岩谷正文" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("ドラムの天才"),
-            ]
-        ) 
-    elif "松浦優斗" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("テンパ"),
-            ]
-        ) 
-    elif "天パ" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("松浦優斗"),
-            ]
-        ) 
-    elif "天ぱ" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("松浦優斗"),
-            ]
-        ) 
-    elif "てんぱ" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("松浦優斗"),
-            ]
-        )
-    elif "テンパ" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("松浦優斗"),
-            ]
-        ) 
-    elif "米津玄師" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("憧れ"),
-            ]
-        )  
-    elif "二神巴野土香" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("~ニノカミハ　ノドカ~多分いつか苗字を変えます"),
-            ]
-        )
-    elif "二上穂乃香" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("ただただ怖い"),
-            ]
-        )
-    elif "二上壮真" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("404　not found ----error"),
-            ]
-        )
-    elif "食べ物" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("日によって変わっちゃうな\nでも割と何でも好きだよ"),
-            ]
-        ) 
-    elif "吉田日向" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("体育会系最強お笑い芸人"),
-            ]
-        ) 
-    elif "秘密" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("漢字の名前がわかる人をどう思っているかはある程度ここに秘密をかいてるよ"),
-            ]
-        )  
-    elif "愚痴" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("直接聞くよ\nそれが億劫ならここに吐いていけばいい\n僕は何があろうと君の味方のつもりだ"),
-            ]
-        )  
-    elif "かえる" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("一生好きなもの"),
-            ]
-        )  
-    elif "カエル" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("一生好きなもの"),
-            ]
-        )
-    elif "蛙" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage("一生好きなもの"),
-            ]
-        )  
-    elif "こんにちは" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage(text=event.message.text+"　　スマホの中だと太陽も月も見えないから残念だ"),
-            ]
-        )
-    elif "おはよう" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage(text=event.message.text+"　　スマホの中だと太陽も月も見えないから残念だ"),
-            ]
-        )
-    elif "こんばんは" in event.message.text:
-        line_bot_api.reply_message(
-            event.reply_token,[
-                TextSendMessage(text=event.message.text+"　　スマホの中だと太陽も月も見えないから残念だ"),
-            ]
-        )
+
     elif "[[["or"]]]" in event.message.text:
         line_bot_api.reply_message(
             event.reply_token,[
