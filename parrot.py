@@ -41,7 +41,6 @@ def callback():
 def handle_message(event):
 
     if event.message.text=="店舗案内":
-        url =''
         line_bot_api.reply_message(
             event.reply_token,[
                 TextSendMessage("未完成"),
