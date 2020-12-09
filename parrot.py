@@ -55,12 +55,8 @@ def handle_message(event):
     elif event.message.text=="従業員名簿":
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage("代表"),
-                TextSendMessage("https://www.instagram.com/mako41443106/"),
-                TextSendMessage("売上No1.桜木NAOTO"),
-                TextSendMessage("https://www.instagram.com/naoto_sakuragi/"),
-                TextSendMessage("クロム"),
-                TextSendMessage("https://www.instagram.com/kuromu960_clubdna/"),
+                TextSendMessage("代表\nhttps://www.instagram.com/mako41443106/"),
+                TextSendMessage("売上No1.桜木NAOTO\nhttps://www.instagram.com/naoto_sakuragi/"),
             ]
         )
     elif event.message.text=="道案内":
