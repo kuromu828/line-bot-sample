@@ -48,7 +48,7 @@ def handle_message(event):
                 TextSendMessage("WILLIST\n https://willist.jp/shop/?area=1&cat=5&sid=662"),
             ]
         )
-    elif event.message.text=="イベント予定":
+    elif event.message.text=="イベント":
         line_bot_api.reply_message(
             event.reply_token,[
                 TextSendMessage("未予定"),
