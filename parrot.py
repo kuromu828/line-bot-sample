@@ -43,7 +43,9 @@ def handle_message(event):
     if event.message.text=="店舗案内":
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage("未完成"),
+                TextSendMessage("広島エリアでイケメンあり･笑いありの最高の場所と言えば\n『DNA』全てはお客様に満足していただく為に…!!\n最高のイケメン達が今宵、今までにない興奮と感動を貴方に届けます。/nこの素敵な時間を味わって下さい♪"),
+                TextSendMessage("ホスホス\n https://www.host2.jp/shop/neo_2/"),
+                TextSendMessage("WILLIST\n https://willist.jp/shop/?area=1&cat=5&sid=662"),
             ]
         )
     elif event.message.text=="イベント予定":
@@ -67,16 +69,24 @@ def handle_message(event):
                 TextSendMessage("〒730-0021 広島県広島市中区胡町２−１３"),
             ]
         )
-    elif event.message.text=="料金表":
+    elif event.message.text=="部屋料金":
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage("未完成"),
+                TextSendMessage("----システム----\n
+初回　無料（1時間）\n
+女性　￥3,000- (2時間)\n
+男性　￥3,000- (1時間)\n
+延長　￥2,000- (1時間)\n
+\n
+セミVIP   ￥3,000-\n
+VIP     ￥5,000-\n
+"),
             ]
         )
-    elif event.message.text=="求人":
+    elif event.message.text=="ドリンク料金":
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage("Coming soon"),
+                TextSendMessage(""),
             ]
         )  
 
