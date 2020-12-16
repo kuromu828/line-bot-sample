@@ -72,15 +72,7 @@ def handle_message(event):
     elif event.message.text=="部屋料金":
         line_bot_api.reply_message(
             event.reply_token,[
-                TextSendMessage("----システム----\n
-初回　無料（1時間）\n
-女性　￥3,000- (2時間)\n
-男性　￥3,000- (1時間)\n
-延長　￥2,000- (1時間)\n
-\n
-セミVIP   ￥3,000-\n
-VIP     ￥5,000-\n
-"),
+                TextSendMessage("----システム----\n初回　無料（1時間）\n女性　￥3,000- (2時間)\n男性　￥3,000- (1時間)\n延長　￥2,000- (1時間)\n\nセミVIP   ￥3,000-\nVIP     ￥5,000-\n"),
             ]
         )
     elif event.message.text=="ドリンク料金":
